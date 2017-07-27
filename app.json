@@ -27,6 +27,9 @@
   "addons": [
     "heroku-postgresql"
   ],
+    "scripts": {
+	"postdeploy": "bundle exec rails db:migrate"
+    }
   "buildpacks": [
     {
       "url": "heroku/ruby"
